@@ -1,13 +1,433 @@
 <!DOCTYPE html>
-<html>
+<html lang="en"><!--html tag start-->
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
+    <title>IV characteristics of a PN junction diode</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/adik.css" rel="stylesheet">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ 
+  
+	
+ <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.2.1/math.js"></script>
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.2.1/math.min.js  "></script>
+ <script src="https://unpkg.com/mathjs/lib/browser/math.js"></script>
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
-</body>
-</html>
+
+<link rel="stylesheet" type="text/js" href="./js/jquery.flot.min.js">
+<link rel="stylesheet" type="text/js" href="./js/jquery.js">
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+<style data-merge-styles="true"></style><style data-merge-styles="true"></style><script language="javascript" type="text/javascript" src="./js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="./js/jquery.flot.min.js"></script>
+ 
+<script type="text/x-mathjax-config;executed=true">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+  
+</head>
+<body onload="abrupt();"><!--body tag start-->
+
+    <div class="container p-3 my-3 text-primary text-center border"><!--First Container under body tag start-->
+        <div class="row"><!--First row under 1st container start-->
+            <div class="col-md-3"><!--First col under 1st row start-->
+                <img class="img-fluid rounded" src="./images/vlabs.png" alt="VLabs logo">
+            </div><!--First col under 1st row end-->
+            <div class="col-md-6"><!--2nd col under 1st row start-->
+                <p class="display-1"> <b> Virtual Labs <br> IIT Kharagpur </b> </p>
+            </div><!--2nd col under 1st row end-->
+            <div class="col-md-3"><!--3rd col under 1st row start-->
+                <img class="img-fluid rounded" src="./images/iitkgp.png" alt="IIT KGP Logo" >
+            </div><!--3rd col under 1st row end-->
+        </div><!--First row under 1st container end-->
+    
+        <hr>
+        <div class="row"><!--2nd row under 1st container start-->
+            <div class="col-md-3"><!--First col under 2nd row start-->
+
+            </div><!--First col under 2nd row end-->
+            <div class="col-md-6"><!--2nd col under 2nd row start-->
+                <p class="h1"> <b>IV characteristics of a PN junction diode</b> </p>
+            </div><!--2nd col under 2nd row end-->
+            <div class="col-md-3"><!--3rd col under 2nd row start-->
+
+            </div><!--3rd col under 2nd row end-->
+        </div><!--2nd row under 1st container end-->
+        <hr>
+        <div class="d-flex p-1 text-primary"><!--3rd row under 1st container start-->
+          <div class="p-1" > <p class="h4"><a href="../index.html"> <span class="LN"> <b> Microelectronics and VLSI Engineering Laboratory </b></span> --> </a></p></div>
+          <div class="p-1"> <p class="h4"><a href="./index.html"> <span class="ExpN"> <b> IV characteristics of a PN junction diode</b> </span> </a></p></div>
+        </div><!--3rd row under 1st container end-->
+    </div><!--First Container under body tag end-->
+    
+    <div class="container p-3 my-5 text-primary text-center border"><!--2nd Container under body tag start-->
+        <div class="row"><!--First row under 2nd container start-->
+
+            <ul class="nav nav-pills nav-justified">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Introduction</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../aim.html">Objective</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../prequiz.html">Pre Quiz</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../theory.html">Theory</a>
+                </li>
+				<li class="nav-item">
+                  <a class="nav-link" href="../procedure.html">Procedure</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./index.html">Simulation</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../postquiz.html">Post Quiz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../feedback.html">Feedback</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../references.html">References</a>
+                  </li>
+
+              </ul>
+        </div><!--First row under 2nd container end-->
+    </div><!--2nd Container under body tag end-->
+	
+    <div class="container p-3 my-5 text-left border"><!--3rd Container under body tag start-->
+      <div class="row"><!--First row under 3rd container start-->
+        <div class="col-md-1"></div><!--First col under 3rd container start& end-->
+        <div class="col-md-10"><!--2nd col under 3rd container start-->
+            <p class="text-center bg-success"> <a class="nav-link" data-bs-toggle="tab"  id="instcontrol" style="background-color:#128BD9"  ><span class=" h3 text-dark"> Instructions </span></a>
+              <div id="inst" style="display:block;height:200px;overflow-y:auto;text-align:justify">
+					<ol>
+					
+			<!-- Instructions -->
+			
+			 <div class="container">
+        
+        
+        <div class="instructions">
+    
+    <ol>
+        <li>Set the parameters for the simulation:
+            <ul>
+                <li>Enter the <b>Area (A)</b> of the diode in cm<sup>2</sup>.</li>
+                <li>Set the <b>Effective Density of States in the Conduction Band (N<sub>c</sub>)</b> and <b>Valence Band (N<sub>v</sub>)</b> at 300K in cm<sup>-3</sup>.</li>
+                <li>Specify the <b>Energy Band Gap (E<sub>g</sub>)</b> in eV.</li>
+            </ul>
+        </li>
+        <li>Provide details for the minority carrier properties:
+            <ul>
+                <li>Enter the <b>Hole Mobility (μ<sub>p</sub>)</b> in cm<sup>2</sup>/V·s.</li>
+                <li>Set the <b>Hole Lifetime (τ<sub>p</sub>)</b> in seconds.</li>
+                <li>Specify the <b>Acceptor Concentration (N<sub>a</sub>)</b> in cm<sup>-3</sup>.</li>
+                <li>Enter the <b>Electron Mobility (μ<sub>n</sub>)</b> in cm<sup>2</sup>/V·s.</li>
+                <li>Set the <b>Electron Lifetime (τ<sub>n</sub>)</b> in seconds.</li>
+                <li>Specify the <b>Donor Concentration (N<sub>d</sub>)</b> in cm<sup>-3</sup>.</li>
+            </ul>
+        </li>
+        <li>Set the <b>Temperature (T)</b> in Kelvin.</li>
+        <li>Provide the external circuit parameters:
+            <ul>
+                <li>Enter the <b>Applied Voltage (V<sub>max</sub>)</b> across the diode.</li>
+                <li>Set the ideality factor <b>η</b>.</li>
+                <li>Specify the <b>Series Resistance (R<sub>s</sub>)</b> in ohms.</li>
+            </ul>
+        </li>
+        <li>After filling in all the required parameters, click the <b>Replot</b> button to generate the simulation results.</li>
+        <li>Choose the material type for the simulation by selecting <b>Si</b>, <b>Ge</b>, or <b>GaAs</b>.</li>
+        <li>The simulation results will be displayed in the following formats:
+            <ul>
+                <li>A plot of <b>log<sub>10</sub>(I)</b> vs. <b>V</b> (Voltage).</li>
+                <li>A table displaying the calculated current values for various voltage inputs.</li>
+                <li>A plot of the <b>I</b> (Current) vs. <b>V</b> (Voltage).</li>
+            </ul>
+        </li>
+        <li>Review the simulation parameters displayed below the plots, which include calculated values such as <b>I<sub>S</sub></b>, <b>n<sub>i</sub></b>, <b>E<sub>g</sub></b>, <b>D<sub>p</sub></b>, <b>D<sub>n</sub></b>, <b>L<sub>p</sub></b>, <b>L<sub>n</sub></b>, etc.</li>
+    </ol>
+    <p>Use the plots and the parameter values to analyze the diode's IV characteristics under different conditions.</p>
+</div>
+
+    </div>
+			
+			
+<!-- end instruction   -->
+					<br><br>
+					</ol>
+	
+					
+					
+		   </div>
+            </p> 
+          </div><!--2nd col under 3rd container end-->
+		  
+        <div class="col-md-1"></div><!--3rd col under 3rd container start& end-->
+      </div><!--First row under 3rd container end-->
+    </div><!--3rd Container under body tag end-->
+	
+   <!--simulation start -->
+ <div class="container">
+        
+        
+        <div class="steps">
+
+
+
+
+</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td valign="top">
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+
+<script language="JavaScript"> 
+
+
+var d1 = [];
+var d2 = [];
+
+var kb = 1.380658E-23;
+var qe = 1.602176565E-19;
+var ni = 0; //var declaration of ni
+
+function bin_search() { 
+  Il = IS*(Math.exp(qe*(V-Ih*RS)/(eta*kb*T)) - 1);
+  I = 0.5*(Il + Ih);
+  for (j=0; j<30; j++) {
+     I_new = IS*(Math.exp(qe*(V-I*RS)/(eta*kb*T)) - 1);
+     if (I_new > I) {Il = I;}
+     if (I_new < I) {Ih = I;}
+     I = 0.5*(Il + Ih);
+	}
+  return I;	
+}
+
+function plotn() {
+	n=0;
+        outtext = "";
+	d1.length=0; //this deletes all the points from the previous calculation
+
+
+	A=parseFloat(data.A.value)/1E4;  //convert to m^2
+	T=parseFloat(data.Temp.value);
+	//new Calculation Variables Nc, Nv and Bg must be provided from user, will calculate ni correctly
+	Nc=parseFloat(data.Nc.value)*1E6;  //convert to m-3
+	Nv=parseFloat(data.Nv.value)*1E6;
+	Eg=parseFloat(data.Eg.value);
+		
+	Mp=parseFloat(data.Mp.value)/1E4;  //convert to m^2/V s
+	taup=parseFloat(data.taup.value);
+	vmax=parseFloat(data.vmax.value);
+
+	Nd=parseFloat(data.Nd.value)*1E6;
+
+	Mn=parseFloat(data.Mn.value)/1E4;
+	
+	taun=parseFloat(data.taun.value);
+
+	Na=parseFloat(data.Na.value)*1E6;
+	eta=parseFloat(data.eta.value);
+	RS=parseFloat(data.RS.value);
+       
+    
+	Dp=Mp*kb*T/qe;
+	Dn=Mn*kb*T/qe;
+	Lp=Math.sqrt(Dp*taup);
+	Ln = Math.sqrt(Dn*taun);
+	ni=Math.sqrt(Nc*Nv*Math.pow(T/300,3))*Math.exp(1.6022E-19*(-Eg)/(2*kb*T)); //new calc for ni
+        IS = A*qe*Math.pow(ni,2)*(Dp/(Lp*Nd) + Dn/(Ln*Na));
+
+	for (k=-200; k<0; k++) {
+		
+		V = k*vmax/200;
+                Ih = IS*(Math.exp(qe*(V)/(eta*kb*T)) - 1);
+                I = bin_search();
+                outtext=outtext+V.toPrecision(6)+"\t"+I.toPrecision(6)+"\n";
+		d2[n]=[V,I];
+		I = Math.log(Math.abs(I));  //  logarithm
+	        I = I/Math.log(10);
+		d1[n]=[-V,I];
+		n++;
+        }
+			              
+
+        for (k=1; k<201; k++) {
+		
+		V = k*vmax/200;
+                Ih = Math.min(IS*(Math.exp(qe*(V)/(eta*kb*T)) - 1),V/RS);
+                I = bin_search();
+                outtext=outtext+V.toPrecision(6)+"\t"+I.toPrecision(6)+"\n";
+		d2[n]=[V,I];
+		I = Math.log(Math.abs(I));  //  logarithm
+	        I = I/Math.log(10);
+		d1[n]=[V,I];
+		n++;
+	}
+
+
+	var data1 = [{ data: d1, color: "rgb(0, 0, 0)", shadowSize:0, lines: {show:true} }];
+	$.plot($("#placeholder"), data1);
+
+	var data2 = [{ data: d2, color: "rgb(0, 0, 0)", shadowSize:0, lines: {show:true} }];
+	$.plot($("#placeholder2"), data2);
+
+        dataout.text.value = outtext;
+
+out = "<hr \/>";
+out = out +"<p>$I_S=$&nbsp;"+IS.toPrecision(3)+" [A]; ";
+out = out +"$n_i=$&nbsp;"+(ni/1E6).toPrecision(3)+" [cm<sup>-3</sup>]; ";
+out = out +"$E_g=$&nbsp;"+Eg.toPrecision(3)+" [eV]; ";
+out = out +"$D_n=$&nbsp;"+(1E4*Dn).toPrecision(3)+" [cm&sup2;/s]; ";
+out = out +"$D_p=$&nbsp;"+(1E4*Dp).toPrecision(3)+" [cm&sup2;/s]; ";
+out = out +"$L_n=$&nbsp;"+(1E6*Ln).toPrecision(3)+" [&mu;m]; ";
+out = out +"$L_p=$&nbsp;"+(1E6*Lp).toPrecision(3)+" [&mu;m]; ";
+document.getElementById('results').innerHTML=out;   
+MathJax.Hub.Queue(['Typeset',MathJax.Hub]);
+	};
+
+
+
+</script>
+
+
+<style>
+p {margin-left:1cm;}
+td.gray {background-color:cccccc}
+</style>
+
+
+
+<table><tr><td>
+
+<table align="center">
+<tr><td>$\text{log}_{10}(I)$&nbsp;[A]</td><td><div id="placeholder" style="width: 500px; height: 400px;"></td></tr>
+<tr><td></td><td><p style="text-align:center">$V$ [V]</p></td></tr></table>
+
+</td><td>
+
+
+<form name="data">
+<table style="border-collapse:collapse" align="center">
+<tbody><tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$A=$</p></td><td class="gray"><input size="10" value="1E-3" name="A" type="text"> cm<sup>2</sup></td></tr>
+
+<!--new Bottons ?! -->
+<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$N_c(300 K)=$ </p></td><td class="gray"><input size="10" value="2.78E19" name="Nc" type="text"> cm<sup>-3</sup></td></tr>
+<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$N_v(300 K)=$ </p></td><td class="gray"><input size="10" value="9.84E18" name="Nv" type="text"> cm<sup>-3</sup></td></tr>
+<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$E_g=$</p></td><td class="gray"><input size="25" value="1.166-4.73E-4*T*T/(T+636)" name="Eg" type="text"> eV</td></tr>
+<tr><td colspan="3" style="background-color:cccccc"><p>&nbsp;</p></td></tr>
+
+<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$\mu_p=$</p></td><td class="gray"><input size="10" value="480" name="Mp" type="text"> cm<sup>2</sup>/Vs</td></tr>
+<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$\tau_p=$</p></td><td class="gray"><input size="10" value="1E-5" name="taup" type="text"> s</td></tr>
+<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$N_a=$</p></td><td class="gray"><input size="10" value="1E17" name="Na" type="text"> cm<sup>-3</sup></td></tr>
+
+<tr><td colspan="3" style="background-color:cccccc"><p>&nbsp;</p></td></tr>
+
+<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$\mu_n=$</p></td><td class="gray"><input size="10" value="1350" name="Mn" type="text"> cm<sup>2</sup>/Vs</td></tr>
+<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$\tau_n=$</p></td><td class="gray"><input size="10" value="1E-5" name="taun" type="text">  s</td></tr>
+<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$N_d=$</p></td><td class="gray"><input size="10" value="5E17" name="Nd" type="text"> cm<sup>-3</sup></td></tr>
+
+
+<tr><td colspan="3" style="background-color:cccccc"><p>&nbsp;</p></td></tr>
+
+<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$T=$</p></td><td class="gray"><input size="10" value="300" name="Temp" type="text"> K</td></tr>
+<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$V_{max}=$</p></td><td class="gray"><input size="10" value="1" name="vmax" type="text"> V</td></tr>
+<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$\eta=$</p></td><td class="gray"><input size="10" value="1" name="eta" type="text"> </td></tr>
+<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$R_S=$</p></td><td class="gray"><input size="10" value="1" name="RS" type="text"> &Omega;</td></tr>
+
+<tr><td colspan="3" style="background-color:cccccc"><p>&nbsp;</p></td></tr>
+
+
+<tr><td colspan="3" style="background-color:cccccc"><p style="text-align:center"><input onclick="plotn()" value="Replot" type="button"></p></td></tr>
+<tr><td colspan="3" style="background-color:cccccc"><p style="text-align:center"><input type="button" value=" Si " onclick="data.Nc.value='2.78E19'; data.Nv.value='9.84E18';data.Eg.value='1.166-4.73E-4*T*T/(T+636)'; data.Mn.value='1350'; data.Mp.value='480';plotn();">
+					<input type="button" value=" Ge " onclick="data.Nc.value='1.04E19'; data.Nv.value='6.0E18';data.Eg.value='0.7437-4.77E-4*T*T/(T+235)'; data.Mn.value='3900'; data.Mp.value='1900';plotn();">
+					<input type="button" value="GaAs" onclick="data.Nc.value='4.45E17'; data.Nv.value='7.72E18';data.Eg.value='1.519-5.41E-4*T*T/(T+204)'; data.Mn.value='8500'; data.Mp.value='400'; plotn();"></p></td></tr>
+</tbody></table>
+
+</form>
+
+
+</td></tr></tbody></table>
+
+<div id="results"></div>
+
+<table><tr><td>
+
+<form name="dataout">
+<table align="center"><tr><td>$V$ [V]&emsp;$I$ [A]</td></tr>
+<tr><td>
+<textarea name="text" rows="10" cols="50" wrap="off">
+</textarea>
+</td></tr>
+</table>
+</form>
+
+</td><td>
+
+<table align="center">
+<tr><td>$I$&nbsp;[A]</td><td><div id="placeholder2" style="width: 400px; height: 300px;"></td></tr>
+<tr><td></td><td><p style="text-align:center">$V$ [V]</p></td></tr></table>
+
+</td></tr></table>
+
+</td></tr></table>
+
+<script>
+plotn();
+</script>
+
+
+</td></tr></table>
+
+
+</div>
+</div>
+   <!--simulation end -->
+   
+
+    <div class="container p-3 my-5 text-primary text-center border"><!--Last and fifth container under body tag start-->
+      <div class="row">
+        <footer>
+          <div class="row ce">
+            <div class="col-sm-12">
+              <p class="h5"><i> Copyright ©2022 <a href="http://vlabs.iitkgp.ac.in/vlt/">Virtual Labs IIT Kharagpur</a> </i><br><br>
+              <a href="../../license/index.html" target="_blank"> Licensing Terms </a>
+            </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+  </div><!--Last and fifth container under body tag end-->
+
+  
+	 
+</body><!--body tag end-->
+</html><!--html tag end-->
