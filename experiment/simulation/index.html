@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en"><!--html tag start-->
 <head>
-    <title>IV characteristics of a PN junction diode</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../css/adik.css" rel="stylesheet">
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
- 
-  
-	
- <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.2.1/math.js"></script>
-  <script src=" https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.2.1/math.min.js  "></script>
- <script src="https://unpkg.com/mathjs/lib/browser/math.js"></script>
- 
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IV Characteristics of a PN Junction Diode</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/adik.css" rel="stylesheet">
+
+<!-- jQuery and jQuery UI -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- MathJax for rendering mathematical expressions -->
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<!-- Math.js library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.2.1/math.min.js"></script>
+
+<!-- jQuery Knob for UI components -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+
+<!-- CanvasJS for charting -->
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+<!-- jQuery Flot Library -->
+<script src="./ncjs/jquery.flot.min.js"></script>
 
 
-<link rel="stylesheet" type="text/js" href="./js/jquery.flot.min.js">
-<link rel="stylesheet" type="text/js" href="./js/jquery.js">
+<!-- MathJax for rendering mathematical expressions -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-
-
-<style data-merge-styles="true"></style><style data-merge-styles="true"></style><script language="javascript" type="text/javascript" src="./js/jquery.js"></script>
-<script language="javascript" type="text/javascript" src="./js/jquery.flot.min.js"></script>
+<script language="javascript" type="text/javascript" src="./ncjs/jquery.flot.min.js"></script>
  
 <script type="text/x-mathjax-config;executed=true">
   MathJax.Hub.Config({
@@ -49,73 +53,7 @@
 </head>
 <body onload="abrupt();"><!--body tag start-->
 
-    <div class="container p-3 my-3 text-primary text-center border"><!--First Container under body tag start-->
-        <div class="row"><!--First row under 1st container start-->
-            <div class="col-md-3"><!--First col under 1st row start-->
-                <img class="img-fluid rounded" src="./images/vlabs.png" alt="VLabs logo">
-            </div><!--First col under 1st row end-->
-            <div class="col-md-6"><!--2nd col under 1st row start-->
-                <p class="display-1"> <b> Virtual Labs <br> IIT Kharagpur </b> </p>
-            </div><!--2nd col under 1st row end-->
-            <div class="col-md-3"><!--3rd col under 1st row start-->
-                <img class="img-fluid rounded" src="./images/iitkgp.png" alt="IIT KGP Logo" >
-            </div><!--3rd col under 1st row end-->
-        </div><!--First row under 1st container end-->
-    
-        <hr>
-        <div class="row"><!--2nd row under 1st container start-->
-            <div class="col-md-3"><!--First col under 2nd row start-->
 
-            </div><!--First col under 2nd row end-->
-            <div class="col-md-6"><!--2nd col under 2nd row start-->
-                <p class="h1"> <b>IV characteristics of a PN junction diode</b> </p>
-            </div><!--2nd col under 2nd row end-->
-            <div class="col-md-3"><!--3rd col under 2nd row start-->
-
-            </div><!--3rd col under 2nd row end-->
-        </div><!--2nd row under 1st container end-->
-        <hr>
-        <div class="d-flex p-1 text-primary"><!--3rd row under 1st container start-->
-          <div class="p-1" > <p class="h4"><a href="../index.html"> <span class="LN"> <b> Microelectronics and VLSI Engineering Laboratory </b></span> --> </a></p></div>
-          <div class="p-1"> <p class="h4"><a href="./index.html"> <span class="ExpN"> <b> IV characteristics of a PN junction diode</b> </span> </a></p></div>
-        </div><!--3rd row under 1st container end-->
-    </div><!--First Container under body tag end-->
-    
-    <div class="container p-3 my-5 text-primary text-center border"><!--2nd Container under body tag start-->
-        <div class="row"><!--First row under 2nd container start-->
-
-            <ul class="nav nav-pills nav-justified">
-                <li class="nav-item">
-                  <a class="nav-link" href="../index.html">Introduction</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../aim.html">Objective</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../prequiz.html">Pre Quiz</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../theory.html">Theory</a>
-                </li>
-				<li class="nav-item">
-                  <a class="nav-link" href="../procedure.html">Procedure</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="./index.html">Simulation</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../postquiz.html">Post Quiz</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../feedback.html">Feedback</a>
-                  </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../references.html">References</a>
-                  </li>
-
-              </ul>
-        </div><!--First row under 2nd container end-->
-    </div><!--2nd Container under body tag end-->
 	
     <div class="container p-3 my-5 text-left border"><!--3rd Container under body tag start-->
       <div class="row"><!--First row under 3rd container start-->
@@ -411,23 +349,5 @@ plotn();
 </div>
 </div>
    <!--simulation end -->
-   
-
-    <div class="container p-3 my-5 text-primary text-center border"><!--Last and fifth container under body tag start-->
-      <div class="row">
-        <footer>
-          <div class="row ce">
-            <div class="col-sm-12">
-              <p class="h5"><i> Copyright ©2022 <a href="http://vlabs.iitkgp.ac.in/vlt/">Virtual Labs IIT Kharagpur</a> </i><br><br>
-              <a href="../../license/index.html" target="_blank"> Licensing Terms </a>
-            </p>
-            </div>
-          </div>
-        </footer>
-      </div>
-  </div><!--Last and fifth container under body tag end-->
-
-  
-	 
 </body><!--body tag end-->
 </html><!--html tag end-->
