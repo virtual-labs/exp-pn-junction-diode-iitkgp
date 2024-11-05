@@ -1,0 +1,116 @@
+
+  {
+	  "version": 2.0,
+  "questions": [
+    {
+        "question": "11. What is the primary cause of the forward voltage drop in a PN junction diode?",
+        "answers": {
+            "a": "Recombination of electrons and holes",
+            "b": "Thermal generation",
+            "c": "Electric field",
+            "d": "Minority carrier injection"
+        },
+        "correctAnswer": "a",
+        "difficulty": "intermediate"
+    },
+    {
+        "question": "12. What happens to the depletion region when a PN junction diode is forward biased?",
+        "answers": {
+            "a": "It widens",
+            "b": "It narrows",
+            "c": "It remains unchanged",
+            "d": "It disappears"
+        },
+        "correctAnswer": "b",
+        "difficulty": "beginner"
+    },
+    {
+        "question": "13. What is the effect of increasing the forward current on the voltage drop across a PN junction diode?",
+        "answers": {
+            "a": "The voltage drop decreases",
+            "b": "The voltage drop increases",
+            "c": "The voltage drop remains constant",
+            "d": "The voltage drop becomes negative"
+        },
+        "correctAnswer": "b",
+        "difficulty": "beginner"
+    },
+    {
+        "question": "14. What type of breakdown occurs in a heavily doped PN junction diode at a relatively low reverse voltage?",
+        "answers": {
+            "a": "Zener breakdown",
+            "b": "Avalanche breakdown",
+            "c": "Thermal breakdown",
+            "d": "Tunneling breakdown"
+        },
+        "correctAnswer": "a",
+        "difficulty": "intermediate"
+    },
+    {
+        "question": "15. What is the primary mechanism of current flow in a PN junction diode under reverse bias?",
+        "answers": {
+            "a": "Majority carrier diffusion",
+            "b": "Minority carrier drift",
+            "c": "Thermal conduction",
+            "d": "Photon emission"
+        },
+        "correctAnswer": "b",
+        "difficulty": "intermediate"
+    },
+    {
+        "question": "16. What parameter is used to describe the sharpness of the knee of the IV curve in a PN junction diode?",
+        "answers": {
+            "a": "Ideality factor",
+            "b": "Saturation current",
+            "c": "Series resistance",
+            "d": "Knee voltage"
+        },
+        "correctAnswer": "a",
+        "difficulty": "advanced"
+    },
+    {
+        "question": "17. Which of the following factors can influence the IV characteristics of a PN junction diode?",
+        "answers": {
+            "a": "Temperature",
+            "b": "Doping concentration",
+            "c": "Material properties",
+            "d": "All of the above"
+        },
+        "correctAnswer": "d",
+        "difficulty": "intermediate"
+    },
+    {
+        "question": "18. At what voltage does a silicon diode typically enter breakdown in the reverse bias?",
+        "answers": {
+            "a": "Around 0.7V",
+            "b": "Around 1.1V",
+            "c": "Around 5V",
+            "d": "Greater than 20V"
+        },
+        "correctAnswer": "d",
+        "difficulty": "beginner"
+    },
+    {
+        "question": "19. What is the typical behavior of a PN junction diode in the reverse saturation region?",
+        "answers": {
+            "a": "Current increases exponentially",
+            "b": "Current remains very low and nearly constant",
+            "c": "Current increases linearly",
+            "d": "Current fluctuates unpredictably"
+        },
+        "correctAnswer": "b",
+        "difficulty": "beginner"
+    },
+    {
+        "question": "20. In the IV characteristics curve of a PN junction diode, what does the slope of the curve in the forward bias region represent?",
+        "answers": {
+            "a": "Current gain",
+            "b": "Dynamic resistance",
+            "c": "Static resistance",
+            "d": "Breakdown voltage"
+        },
+        "correctAnswer": "b",
+        "difficulty": "advanced"
+    }
+  ]
+}

@@ -1,0 +1,394 @@
+
+/home/runner/work/exp-pn-junction-diode-iitkgp/exp-pn-junction-diode-iitkgp/experiment/simulation/ncjs/MathJax.js
+  19:95     warning  'MathJax' is not defined                                                   no-undef
+  19:196    warning  'MathJax' is not defined                                                   no-undef
+  19:218    warning  'MathJax' is not defined                                                   no-undef
+  19:242    warning  'MathJax' is not defined                                                   no-undef
+  19:270    warning  'MathJax' is not defined                                                   no-undef
+  19:297    warning  'MathJax' is not defined                                                   no-undef
+  19:484    warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  19:1102   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  19:1288   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  19:2019   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  19:2910   warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  19:6755   warning  'MathJax' is not defined                                                   no-undef
+  19:11883  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  19:12109  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  19:12477  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  19:12833  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  19:13198  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  19:13381  warning  'MathJax' is not defined                                                   no-undef
+  19:16987  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  19:17284  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  19:17408  warning  'MathJax' is not defined                                                   no-undef
+  19:17491  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  19:17558  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  19:17629  warning  'MathJax' is not defined                                                   no-undef
+  19:17740  warning  'MathJax' is not defined                                                   no-undef
+  19:17808  warning  'MathJax' is not defined                                                   no-undef
+  19:18559  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  19:18821  warning  Empty block statement                                                      no-empty
+  19:18969  warning  Empty block statement                                                      no-empty
+  19:19248  warning  'MathJax' is not defined                                                   no-undef
+  19:20908  warning  Unnecessary escape character: \%                                           no-useless-escape
+  19:20935  warning  Unnecessary escape character: \}                                           no-useless-escape
+  19:21213  warning  'MathJax' is not defined                                                   no-undef
+  19:21390  warning  'MathJax' is not defined                                                   no-undef
+  19:22409  warning  'MathJax' is not defined                                                   no-undef
+  19:22492  warning  'MathJax' is not defined                                                   no-undef
+  19:22616  warning  'MathJax' is not defined                                                   no-undef
+  19:22899  warning  Unnecessary escape character: \)                                           no-useless-escape
+  19:23079  warning  'MathJax' is not defined                                                   no-undef
+  19:23277  warning  'MathJax' is not defined                                                   no-undef
+  19:23379  warning  'MathJax' is not defined                                                   no-undef
+  19:23685  warning  'MathJax' is not defined                                                   no-undef
+  19:23787  warning  'MathJax' is not defined                                                   no-undef
+  19:23872  warning  'MathJax' is not defined                                                   no-undef
+  19:24071  warning  'MathJax' is not defined                                                   no-undef
+  19:24306  warning  'MathJax' is not defined                                                   no-undef
+  19:24519  warning  'MathJax' is not defined                                                   no-undef
+  19:24679  warning  'MathJax' is not defined                                                   no-undef
+  19:24723  warning  'MathJax' is not defined                                                   no-undef
+  19:24764  warning  'MathJax' is not defined                                                   no-undef
+  19:24841  warning  'MathJax' is not defined                                                   no-undef
+  19:25126  warning  'MathJax' is not defined                                                   no-undef
+  19:25349  warning  'MathJax' is not defined                                                   no-undef
+  19:25379  warning  'MathJax' is not defined                                                   no-undef
+  19:25398  warning  'MathJax' is not defined                                                   no-undef
+  19:26041  warning  'MathJax' is not defined                                                   no-undef
+  19:26222  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  19:26640  warning  'a' is defined but never used                                              no-unused-vars
+  19:26643  warning  'MathJax' is not defined                                                   no-undef
+  19:26714  warning  'MathJax' is not defined                                                   no-undef
+  19:26752  warning  'MathJax' is not defined                                                   no-undef
+  19:26818  warning  'MathJax' is not defined                                                   no-undef
+  19:26895  warning  'a' is defined but never used                                              no-unused-vars
+  19:26898  warning  'MathJax' is not defined                                                   no-undef
+  19:26959  warning  'MathJax' is not defined                                                   no-undef
+  19:27973  warning  'MathJax' is not defined                                                   no-undef
+  19:28042  warning  'MathJax' is not defined                                                   no-undef
+  19:28236  warning  'MathJax' is not defined                                                   no-undef
+  19:28295  warning  'MathJax' is not defined                                                   no-undef
+  19:28907  warning  'MathJax' is not defined                                                   no-undef
+  19:28944  warning  'MathJax' is not defined                                                   no-undef
+  19:28984  warning  'MathJax' is not defined                                                   no-undef
+  19:29013  warning  'MathJax' is not defined                                                   no-undef
+  19:29198  warning  'MathJax' is not defined                                                   no-undef
+  19:29551  warning  'MathJax' is not defined                                                   no-undef
+  19:29927  warning  'MathJax' is not defined                                                   no-undef
+  19:30435  warning  'MathJax' is not defined                                                   no-undef
+  19:30481  warning  'MathJax' is not defined                                                   no-undef
+  19:31189  warning  'MathJax' is not defined                                                   no-undef
+  19:32013  warning  'MathJax' is not defined                                                   no-undef
+  19:32149  warning  'MathJax' is not defined                                                   no-undef
+  19:32495  warning  'MathJax' is not defined                                                   no-undef
+  19:32531  warning  'MathJax' is not defined                                                   no-undef
+  19:32599  warning  'MathJax' is not defined                                                   no-undef
+  19:32636  warning  'MathJax' is not defined                                                   no-undef
+  19:32697  warning  'MathJax' is not defined                                                   no-undef
+  19:32742  warning  'MathJax' is not defined                                                   no-undef
+  19:32808  warning  'MathJax' is not defined                                                   no-undef
+  19:32836  warning  'MathJax' is not defined                                                   no-undef
+  19:32899  warning  'MathJax' is not defined                                                   no-undef
+  19:32960  warning  'MathJax' is not defined                                                   no-undef
+  19:33018  warning  'MathJax' is not defined                                                   no-undef
+  19:33081  warning  'MathJax' is not defined                                                   no-undef
+  19:33959  warning  'MathJax' is not defined                                                   no-undef
+  19:34212  warning  'MathJax' is not defined                                                   no-undef
+  19:34468  warning  'MathJax' is not defined                                                   no-undef
+  19:34579  warning  'MathJax' is not defined                                                   no-undef
+  19:34768  warning  'MathJax' is not defined                                                   no-undef
+  19:34949  warning  'MathJax' is not defined                                                   no-undef
+  19:35028  warning  'MathJax' is not defined                                                   no-undef
+  19:35201  warning  'MathJax' is not defined                                                   no-undef
+  19:35845  warning  'MathJax' is not defined                                                   no-undef
+  19:35989  warning  'MathJax' is not defined                                                   no-undef
+  19:36069  warning  'MathJax' is not defined                                                   no-undef
+  19:36595  warning  'MathJax' is not defined                                                   no-undef
+  19:36671  warning  'a' is defined but never used                                              no-unused-vars
+  19:37141  warning  'MathJax' is not defined                                                   no-undef
+  19:37335  warning  'MathJax' is not defined                                                   no-undef
+  19:38376  warning  'MathJax' is not defined                                                   no-undef
+  19:39157  warning  'MathJax' is not defined                                                   no-undef
+  19:39290  warning  'MathJax' is not defined                                                   no-undef
+  19:39424  warning  'MathJax' is not defined                                                   no-undef
+  19:39989  warning  'MathJax' is not defined                                                   no-undef
+  19:40131  warning  'MathJax' is not defined                                                   no-undef
+  19:40212  warning  'MathJax' is not defined                                                   no-undef
+  19:40253  warning  'MathJax' is not defined                                                   no-undef
+  19:40368  warning  'MathJax' is not defined                                                   no-undef
+  19:40565  warning  'MathJax' is not defined                                                   no-undef
+  19:40904  warning  'MathJax' is not defined                                                   no-undef
+  19:41060  warning  'MathJax' is not defined                                                   no-undef
+  19:41128  warning  'MathJax' is not defined                                                   no-undef
+  19:41391  warning  'MathJax' is not defined                                                   no-undef
+  19:41592  warning  'MathJax' is not defined                                                   no-undef
+  19:41705  warning  'MathJax' is not defined                                                   no-undef
+  19:42106  warning  'MathJax' is not defined                                                   no-undef
+  19:42286  warning  'MathJax' is not defined                                                   no-undef
+  19:42426  warning  'MathJax' is not defined                                                   no-undef
+  19:42501  warning  'MathJax' is not defined                                                   no-undef
+  19:42538  warning  'MathJax' is not defined                                                   no-undef
+  19:43009  warning  'MathJax' is not defined                                                   no-undef
+  19:43075  warning  'MathJax' is not defined                                                   no-undef
+  19:43130  warning  'MathJax' is not defined                                                   no-undef
+  19:43169  warning  Empty block statement                                                      no-empty
+  19:43275  warning  'MathJax' is not defined                                                   no-undef
+  19:43648  warning  'MathJax' is not defined                                                   no-undef
+  19:44483  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  19:44531  warning  'MathJax' is not defined                                                   no-undef
+  19:44685  warning  'a' is defined but never used                                              no-unused-vars
+  19:44892  warning  'MathJax' is not defined                                                   no-undef
+  19:44911  warning  'MathJax' is not defined                                                   no-undef
+  19:44937  warning  'MathJax' is not defined                                                   no-undef
+  19:44961  warning  'MathJax' is not defined                                                   no-undef
+  19:44980  warning  'MathJax' is not defined                                                   no-undef
+  19:45024  warning  'MathJax' is not defined                                                   no-undef
+  19:45065  warning  'MathJax' is not defined                                                   no-undef
+  19:45086  warning  'MathJax' is not defined                                                   no-undef
+  19:45109  warning  'MathJax' is not defined                                                   no-undef
+  19:45130  warning  'MathJax' is not defined                                                   no-undef
+  19:45167  warning  'MathJax' is not defined                                                   no-undef
+  19:45199  warning  'MathJax' is not defined                                                   no-undef
+  19:45318  warning  'MathJax' is not defined                                                   no-undef
+  19:45340  warning  'MathJax' is not defined                                                   no-undef
+  19:45367  warning  'MathJax' is not defined                                                   no-undef
+  19:45392  warning  'MathJax' is not defined                                                   no-undef
+  19:45441  warning  'MathJax' is not defined                                                   no-undef
+  19:45494  warning  'MathJax' is not defined                                                   no-undef
+  19:45707  warning  'MathJax' is not defined                                                   no-undef
+  19:45773  warning  'MathJax' is not defined                                                   no-undef
+  19:45785  warning  'MathJax' is not defined                                                   no-undef
+  19:45964  warning  'MathJax' is not defined                                                   no-undef
+  19:46113  warning  'MathJax' is not defined                                                   no-undef
+  19:46214  warning  'MathJax' is not defined                                                   no-undef
+  19:46323  warning  'MathJax' is not defined                                                   no-undef
+  19:46580  warning  'MathJax' is not defined                                                   no-undef
+  19:46605  warning  'MathJax' is not defined                                                   no-undef
+  19:46716  warning  'MathJax' is not defined                                                   no-undef
+  19:46743  warning  'MathJax' is not defined                                                   no-undef
+  19:46823  warning  'MathJax' is not defined                                                   no-undef
+  19:47214  warning  'MathJax' is not defined                                                   no-undef
+  19:47249  warning  'MathJax' is not defined                                                   no-undef
+  19:47336  warning  'MathJax' is not defined                                                   no-undef
+  19:47368  warning  'MathJax' is not defined                                                   no-undef
+  19:47424  warning  'MathJax' is not defined                                                   no-undef
+  19:47575  warning  'MathJax' is not defined                                                   no-undef
+  19:47626  warning  'MathJax' is not defined                                                   no-undef
+  19:47639  warning  'MathJax' is not defined                                                   no-undef
+  19:47723  warning  'MathJax' is not defined                                                   no-undef
+  19:47744  warning  'MathJax' is not defined                                                   no-undef
+  19:47910  warning  'MathJax' is not defined                                                   no-undef
+  19:48086  warning  'MathJax' is not defined                                                   no-undef
+  19:48183  warning  'MathJax' is not defined                                                   no-undef
+  19:48286  warning  'MathJax' is not defined                                                   no-undef
+  19:48336  warning  'MathJax' is not defined                                                   no-undef
+  19:48370  warning  'MathJax' is not defined                                                   no-undef
+  19:48415  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  19:48528  warning  'MathJax' is not defined                                                   no-undef
+  19:48599  warning  'MathJax' is not defined                                                   no-undef
+  19:49059  warning  'MathJax' is not defined                                                   no-undef
+  19:49090  warning  'MathJax' is not defined                                                   no-undef
+  19:49134  warning  'MathJax' is not defined                                                   no-undef
+  19:49211  warning  'MathJax' is not defined                                                   no-undef
+  19:49248  warning  'MathJax' is not defined                                                   no-undef
+  19:49298  warning  'MathJax' is not defined                                                   no-undef
+  19:49332  warning  'MathJax' is not defined                                                   no-undef
+  19:49398  warning  'MathJax' is not defined                                                   no-undef
+  19:49455  warning  'MathJax' is not defined                                                   no-undef
+  19:49486  warning  'MathJax' is not defined                                                   no-undef
+  19:49530  warning  'MathJax' is not defined                                                   no-undef
+  19:49569  warning  'MathJax' is not defined                                                   no-undef
+  19:49597  warning  'MathJax' is not defined                                                   no-undef
+  19:49695  warning  'MathJax' is not defined                                                   no-undef
+  19:49723  warning  'MathJax' is not defined                                                   no-undef
+  19:49809  warning  'MathJax' is not defined                                                   no-undef
+  19:50210  warning  'MathJax' is not defined                                                   no-undef
+  19:50340  warning  'MathJax' is not defined                                                   no-undef
+  19:50520  warning  'MathJax' is not defined                                                   no-undef
+  19:50572  warning  'MathJax' is not defined                                                   no-undef
+  19:50694  warning  'MathJax' is not defined                                                   no-undef
+  19:50725  warning  'MathJax' is not defined                                                   no-undef
+  19:50867  warning  'MathJax' is not defined                                                   no-undef
+  19:51113  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  19:51380  warning  'h' is defined but never used                                              no-unused-vars
+  19:51382  warning  'i' is defined but never used                                              no-unused-vars
+  19:51492  warning  'h' is defined but never used                                              no-unused-vars
+  19:51935  warning  'MathJax' is not defined                                                   no-undef
+  19:52020  warning  'MathJax' is not defined                                                   no-undef
+  19:52628  warning  'l' is defined but never used                                              no-unused-vars
+  19:52630  warning  'q' is defined but never used                                              no-unused-vars
+  19:53544  warning  'j' is defined but never used                                              no-unused-vars
+  19:53634  warning  'k' is defined but never used                                              no-unused-vars
+  19:54136  warning  'h' is defined but never used                                              no-unused-vars
+  19:55701  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  19:55807  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  19:56683  warning  'MathJax' is not defined                                                   no-undef
+  19:56930  warning  'MathJax' is not defined                                                   no-undef
+  19:57616  warning  Unnecessary escape character: \&                                           no-useless-escape
+  19:57789  warning  Unnecessary escape character: \/                                           no-useless-escape
+  19:59017  warning  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  19:60164  warning  Unnecessary escape character: \/                                           no-useless-escape
+  19:60184  warning  Unnecessary escape character: \)                                           no-useless-escape
+  19:60874  warning  Unnecessary escape character: \/                                           no-useless-escape
+  19:60909  warning  'opera' is not defined                                                     no-undef
+  19:61137  warning  'MathJax' is not defined                                                   no-undef
+  19:61197  warning  'MathJax' is not defined                                                   no-undef
+  19:61318  warning  'ActiveXObject' is not defined                                             no-undef
+  19:61385  warning  Empty block statement                                                      no-empty
+  19:61894  warning  Empty block statement                                                      no-empty
+  19:61952  warning  'MathJax' is not defined                                                   no-undef
+  19:62301  warning  'MathJax' is not defined                                                   no-undef
+  19:62402  warning  Unnecessary semicolon                                                      no-extra-semi
+
+/home/runner/work/exp-pn-junction-diode-iitkgp/exp-pn-junction-diode-iitkgp/experiment/simulation/ncjs/jquery.flot.js
+    28:13    warning  'jQuery' is not defined                                          no-undef
+    28:29    warning  'jQuery' is not defined                                          no-undef
+    28:618   warning  'jQuery' is not defined                                          no-undef
+    28:676   warning  'jQuery' is not defined                                          no-undef
+    28:799   warning  'jQuery' is not defined                                          no-undef
+    28:882   warning  'jQuery' is not defined                                          no-undef
+    28:905   warning  'jQuery' is not defined                                          no-undef
+    28:944   warning  'jQuery' is not defined                                          no-undef
+    28:965   warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+    28:1109  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+    28:1299  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+    28:1331  warning  Unnecessary escape character: \%                                 no-useless-escape
+    28:1361  warning  Unnecessary escape character: \%                                 no-useless-escape
+    28:1391  warning  Unnecessary escape character: \%                                 no-useless-escape
+    28:1488  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+    28:1521  warning  Unnecessary escape character: \%                                 no-useless-escape
+    28:1551  warning  Unnecessary escape character: \%                                 no-useless-escape
+    28:1581  warning  Unnecessary escape character: \%                                 no-useless-escape
+    28:1723  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+    28:1853  warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+    28:1992  warning  'jQuery' is not defined                                          no-undef
+   350:29    warning  'length' is defined but never used                               no-unused-vars
+   351:32    warning  'x' is defined but never used                                    no-unused-vars
+   351:35    warning  'y' is defined but never used                                    no-unused-vars
+   400:17    warning  'insertSteps' is not defined                                     no-undef
+   450:29    warning  'insertSteps' is not defined                                     no-undef
+   661:29    warning  'dummyDiv' is already defined                                    no-redeclare
+   682:22    warning  'i' is not defined                                               no-undef
+   682:29    warning  'i' is not defined                                               no-undef
+   682:50    warning  'i' is not defined                                               no-undef
+   683:65    warning  'i' is not defined                                               no-undef
+   683:91    warning  'i' is not defined                                               no-undef
+   924:25    warning  'fmt' is not defined                                             no-undef
+   927:29    warning  'fmt' is not defined                                             no-undef
+   929:29    warning  'fmt' is not defined                                             no-undef
+   932:25    warning  'fmt' is not defined                                             no-undef
+   935:29    warning  'fmt' is not defined                                             no-undef
+   937:29    warning  'fmt' is not defined                                             no-undef
+   940:25    warning  'fmt' is not defined                                             no-undef
+   942:49    warning  'fmt' is not defined                                             no-undef
+  1074:33    warning  'reverse' is defined but never used                              no-unused-vars
+  1724:18    warning  'i' is not defined                                               no-undef
+  1724:25    warning  'i' is not defined                                               no-undef
+  1724:46    warning  'i' is not defined                                               no-undef
+  1725:28    warning  'i' is not defined                                               no-undef
+  1730:21    warning  'i' is not defined                                               no-undef
+  1798:30    warning  'foundPoint' is assigned a value but never used                  no-unused-vars
+  1846:29    warning  'x' is already defined                                           no-redeclare
+  1846:44    warning  'y' is already defined                                           no-redeclare
+  2119:4     warning  'jQuery' is not defined                                          no-undef
+
+/home/runner/work/exp-pn-junction-diode-iitkgp/exp-pn-junction-diode-iitkgp/experiment/simulation/ncjs/jquery.flot.min.js
+  1:914    warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  1:1057   warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  1:1246   warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  1:1278   warning  Unnecessary escape character: \%                                 no-useless-escape
+  1:1308   warning  Unnecessary escape character: \%                                 no-useless-escape
+  1:1338   warning  Unnecessary escape character: \%                                 no-useless-escape
+  1:1434   warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  1:1467   warning  Unnecessary escape character: \%                                 no-useless-escape
+  1:1497   warning  Unnecessary escape character: \%                                 no-useless-escape
+  1:1527   warning  Unnecessary escape character: \%                                 no-useless-escape
+  1:1668   warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  1:1797   warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  1:2910   warning  'jQuery' is not defined                                          no-undef
+  1:13325  warning  'n' is already defined                                           no-redeclare
+  1:26009  warning  's' is already defined                                           no-redeclare
+  1:28052  warning  'g' is already defined                                           no-redeclare
+  1:28059  warning  'b' is already defined                                           no-redeclare
+  2:1924   warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  2:3267   warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  2:3676   warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  2:3713   warning  'f' is already defined                                           no-redeclare
+  2:3715   warning  'u' is already defined                                           no-redeclare
+  2:3753   warning  'd' is already defined                                           no-redeclare
+  2:3757   warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  2:3983   warning  'jQuery' is not defined                                          no-undef
+
+/home/runner/work/exp-pn-junction-diode-iitkgp/exp-pn-junction-diode-iitkgp/experiment/simulation/ncjs/jquery.js
+    33:20   warning  Unnecessary escape character: \[                                 no-useless-escape
+    33:22   warning  Unnecessary escape character: \.                                 no-useless-escape
+   692:85   warning  Empty block statement                                            no-empty
+   746:13   warning  'name' is already defined                                        no-redeclare
+   754:4    warning  Move function declaration to function body root                  no-inner-declarations
+   818:34   warning  Unnecessary escape character: \-                                 no-useless-escape
+   897:4    warning  Mixed spaces and tabs                                            no-mixed-spaces-and-tabs
+  1170:48   warning  Unnecessary escape character: \/                                 no-useless-escape
+  1404:3    warning  Mixed spaces and tabs                                            no-mixed-spaces-and-tabs
+  1421:105  warning  Unnecessary escape character: \[                                 no-useless-escape
+  1436:36   warning  'check' is defined but never used                                no-unused-vars
+  1436:43   warning  'mode' is defined but never used                                 no-unused-vars
+  1514:14   warning  'i' is already defined                                           no-redeclare
+  1528:4    warning  'hasDuplicate' is not defined                                    no-undef
+  1531:9    warning  'hasDuplicate' is not defined                                    no-undef
+  1532:15   warning  'i' is already defined                                           no-redeclare
+  1556:29   warning  'match' is already defined                                       no-redeclare
+  1661:30   warning  Unnecessary escape character: \*                                 no-useless-escape
+  1664:63   warning  Unnecessary escape character: \)                                 no-useless-escape
+  1664:74   warning  Unnecessary escape character: \(                                 no-useless-escape
+  1664:76   warning  Unnecessary escape character: \)                                 no-useless-escape
+  1687:69   warning  Empty block statement                                            no-empty
+  1713:15   warning  'i' is already defined                                           no-redeclare
+  1713:22   warning  'l' is already defined                                           no-redeclare
+  1714:10   warning  'elem' is already defined                                        no-redeclare
+  1755:34   warning  'isXML' is defined but never used                                no-unused-vars
+  1797:48   warning  Empty block statement                                            no-empty
+  1949:15   warning  'i' is already defined                                           no-redeclare
+  1963:13   warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  1968:5    warning  Expected a 'break' statement before 'case'                       no-fallthrough
+  1969:13   warning  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  2055:65   warning  Unnecessary escape character: \[                                 no-useless-escape
+  2055:77   warning  Unnecessary escape character: \(                                 no-useless-escape
+  2087:15   warning  'i' is already defined                                           no-redeclare
+  2103:4    warning  'hasDuplicate' is not defined                                    no-undef
+  2111:4    warning  'hasDuplicate' is not defined                                    no-undef
+  2124:4    warning  'hasDuplicate' is not defined                                    no-undef
+  2144:7    warning  Redundant double negation                                        no-extra-boolean-cast
+  2219:14   warning  Empty block statement                                            no-empty
+  2401:41   warning  'elem' is defined but never used                                 no-unused-vars
+  2425:1    warning  Unreachable code                                                 no-unreachable
+  2526:50   warning  'index' is defined but never used                                no-unused-vars
+  2653:16   warning  Empty block statement                                            no-empty
+  3174:12   warning  Empty block statement                                            no-empty
+  3303:37   warning  'i' is defined but never used                                    no-unused-vars
+  3382:38   warning  'ActiveXObject' is not defined                                   no-undef
+  3439:44   warning  Empty block statement                                            no-empty
+  3469:31   warning  Unnecessary escape character: \/                                 no-useless-escape
+  3537:13   warning  Empty block statement                                            no-empty
+  3595:17   warning  Empty block statement                                            no-empty
+  3688:13   warning  Empty block statement                                            no-empty
+  3699:13   warning  Empty block statement                                            no-empty
+  3738:4    warning  Unnecessary semicolon                                            no-extra-semi
+  3817:14   warning  'i' is already defined                                           no-redeclare
+  3817:21   warning  'l' is already defined                                           no-redeclare
+  3837:14   warning  'i' is already defined                                           no-redeclare
+  3837:21   warning  'l' is already defined                                           no-redeclare
+  4154:1    warning  Mixed spaces and tabs                                            no-mixed-spaces-and-tabs
+  4155:1    warning  Mixed spaces and tabs                                            no-mixed-spaces-and-tabs
+  4156:1    warning  Mixed spaces and tabs                                            no-mixed-spaces-and-tabs
+  4202:5    warning  'prevOffsetParent' is assigned a value but never used            no-unused-vars
+  4224:92   warning  'table' is defined but never used                                no-unused-vars
+  4261:7    warning  'left' is assigned a value but never used                        no-unused-vars
+  4261:17   warning  'top' is assigned a value but never used                         no-unused-vars
+  4314:6    warning  Mixed spaces and tabs                                            no-mixed-spaces-and-tabs
+  4330:6    warning  'tl' is assigned a value but never used                          no-unused-vars
+  4331:3    warning  'br' is assigned a value but never used                          no-unused-vars
+
+✖ 382 problems (0 errors, 382 warnings)
+  0 errors and 3 warnings potentially fixable with the `--fix` option.
+
