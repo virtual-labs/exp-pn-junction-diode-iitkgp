@@ -1,0 +1,115 @@
+  {
+	  "version": 2.0,
+  "questions": [
+    {
+        "question": "1. What is the threshold voltage in the forward bias region of a silicon PN junction diode typically around?",
+        "answers": {
+            "a": "0.1V",
+            "b": "0.3V",
+            "c": "0.7V",
+            "d": "1.2V"
+        },
+        "correctAnswer": "c",
+        "difficulty": "beginner"
+    },
+    {
+        "question": "2. What happens to the current in a PN junction diode as the forward voltage increases beyond the threshold?",
+        "answers": {
+            "a": "Decreases exponentially",
+            "b": "Increases linearly",
+            "c": "Increases exponentially",
+            "d": "Remains constant"
+        },
+        "correctAnswer": "c",
+        "difficulty": "beginner"
+    },
+    {
+        "question": "3. In reverse bias, what is the current through a PN junction diode primarily due to?",
+        "answers": {
+            "a": "Minority carriers",
+            "b": "Majority carriers",
+            "c": "Thermal noise",
+            "d": "Photon absorption"
+        },
+        "correctAnswer": "a",
+        "difficulty": "intermediate"
+    },
+    {
+        "question": "4. What is the term used to describe the voltage at which a significant increase in reverse current occurs in a diode?",
+        "answers": {
+            "a": "Breakdown voltage",
+            "b": "Threshold voltage",
+            "c": "Saturation voltage",
+            "d": "Knee voltage"
+        },
+        "correctAnswer": "a",
+        "difficulty": "beginner"
+    },
+    {
+        "question": "5. What is the typical reverse saturation current (I_s) of a silicon diode at room temperature?",
+        "answers": {
+            "a": "In the range of nanoamperes",
+            "b": "In the range of microamperes",
+            "c": "In the range of milliamperes",
+            "d": "In the range of amperes"
+        },
+        "correctAnswer": "a",
+        "difficulty": "intermediate"
+    },
+    {
+        "question": "6. How does temperature affect the reverse saturation current in a PN junction diode?",
+        "answers": {
+            "a": "It remains unchanged",
+            "b": "It decreases",
+            "c": "It increases",
+            "d": "It fluctuates randomly"
+        },
+        "correctAnswer": "c",
+        "difficulty": "intermediate"
+    },
+    {
+        "question": "7. What characteristic of a diode is defined by the region where the diode current increases rapidly with a small increase in forward voltage?",
+        "answers": {
+            "a": "Linear region",
+            "b": "Breakdown region",
+            "c": "Ohmic region",
+            "d": "Exponential region"
+        },
+        "correctAnswer": "d",
+        "difficulty": "beginner"
+    },
+    {
+        "question": "8. In the context of diode IV characteristics, what does the term 'ideal diode' refer to?",
+        "answers": {
+            "a": "A diode with zero forward voltage drop",
+            "b": "A diode with infinite reverse resistance",
+            "c": "A diode with zero reverse saturation current",
+            "d": "All of the above"
+        },
+        "correctAnswer": "d",
+        "difficulty": "advanced"
+    },
+    {
+        "question": "9. What effect does increasing the doping concentration in the P and N regions have on the diode's breakdown voltage?",
+        "answers": {
+            "a": "Increases the breakdown voltage",
+            "b": "Decreases the breakdown voltage",
+            "c": "Has no effect",
+            "d": "Causes unpredictable changes"
+        },
+        "correctAnswer": "b",
+        "difficulty": "advanced"
+    },
+    {
+        "question": "10. In a real diode, what causes the deviation from the ideal exponential IV characteristic at high current levels?",
+        "answers": {
+            "a": "Series resistance",
+            "b": "Temperature effects",
+            "c": "High injection effects",
+            "d": "All of the above"
+        },
+        "correctAnswer": "d",
+        "difficulty": "advanced"
+    }
+  ]
+}
