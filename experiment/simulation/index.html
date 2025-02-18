@@ -50,6 +50,49 @@
   });
 </script>
   
+<style>
+        .form-control {
+            margin-bottom: 10px;
+        }
+        .graph-container {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .graph-placeholder {
+            height: 400px;
+            width: 100%;
+        }
+        .results {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
+<style>
+  .form-control {
+      margin-bottom: 10px;
+  }
+  .graph-container {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+  }
+  .graph-placeholder {
+      height: 400px;
+      width: 100%;
+  }
+  .results {
+      background-color: #e9ecef;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+  }
+</style>
+
 </head>
 <body onload="abrupt();"><!--body tag start-->
 
@@ -65,7 +108,7 @@
 					
 			<!-- Instructions -->
 			
-			 <div class="container">
+			<div class="container">
         
         
         <div class="instructions">
@@ -111,8 +154,6 @@
 </div>
 
     </div>
-			
-			
 <!-- end instruction   -->
 					<br><br>
 					</ol>
@@ -169,88 +210,121 @@ function bin_search() {
   return I;	
 }
 
-function plotn() {
-	n=0;
-        outtext = "";
-	d1.length=0; //this deletes all the points from the previous calculation
+function plotn() { 
+    n = 0;
+    outtext = "";
+    d1.length = 0; // Reset previous points
+    d2.length = 0;
 
-
-	A=parseFloat(data.A.value)/1E4;  //convert to m^2
-	T=parseFloat(data.Temp.value);
-	//new Calculation Variables Nc, Nv and Bg must be provided from user, will calculate ni correctly
-	Nc=parseFloat(data.Nc.value)*1E6;  //convert to m-3
-	Nv=parseFloat(data.Nv.value)*1E6;
-	Eg=parseFloat(data.Eg.value);
-		
-	Mp=parseFloat(data.Mp.value)/1E4;  //convert to m^2/V s
-	taup=parseFloat(data.taup.value);
-	vmax=parseFloat(data.vmax.value);
-
-	Nd=parseFloat(data.Nd.value)*1E6;
-
-	Mn=parseFloat(data.Mn.value)/1E4;
-	
-	taun=parseFloat(data.taun.value);
-
-	Na=parseFloat(data.Na.value)*1E6;
-	eta=parseFloat(data.eta.value);
-	RS=parseFloat(data.RS.value);
-       
+    A = parseFloat(data.A.value) / 1E4;  // Convert to m²
+    T = parseFloat(data.Temp.value);
     
-	Dp=Mp*kb*T/qe;
-	Dn=Mn*kb*T/qe;
-	Lp=Math.sqrt(Dp*taup);
-	Ln = Math.sqrt(Dn*taun);
-	ni=Math.sqrt(Nc*Nv*Math.pow(T/300,3))*Math.exp(1.6022E-19*(-Eg)/(2*kb*T)); //new calc for ni
-        IS = A*qe*Math.pow(ni,2)*(Dp/(Lp*Nd) + Dn/(Ln*Na));
+    Nc = parseFloat(data.Nc.value) * 1E6;  // Convert to m⁻³
+    Nv = parseFloat(data.Nv.value) * 1E6;
+    Eg = parseFloat(data.Eg.value);
+        
+    Mp = parseFloat(data.Mp.value) / 1E4;  // Convert to m²/V s
+    taup = parseFloat(data.taup.value);
+    vmax = parseFloat(data.vmax.value);
+    Nd = parseFloat(data.Nd.value) * 1E6;
+    Mn = parseFloat(data.Mn.value) / 1E4;
+    taun = parseFloat(data.taun.value);
+    Na = parseFloat(data.Na.value) * 1E6;
+    eta = parseFloat(data.eta.value);
+    RS = parseFloat(data.RS.value);
+       
+    Dp = Mp * kb * T / qe;
+    Dn = Mn * kb * T / qe;
+    Lp = Math.sqrt(Dp * taup);
+    Ln = Math.sqrt(Dn * taun);
+    ni = Math.sqrt(Nc * Nv * Math.pow(T / 300, 3)) * Math.exp(1.6022E-19 * (-Eg) / (2 * kb * T));
+    IS = A * qe * Math.pow(ni, 2) * (Dp / (Lp * Nd) + Dn / (Ln * Na));
 
-	for (k=-200; k<0; k++) {
-		
-		V = k*vmax/200;
-                Ih = IS*(Math.exp(qe*(V)/(eta*kb*T)) - 1);
-                I = bin_search();
-                outtext=outtext+V.toPrecision(6)+"\t"+I.toPrecision(6)+"\n";
-		d2[n]=[V,I];
-		I = Math.log(Math.abs(I));  //  logarithm
-	        I = I/Math.log(10);
-		d1[n]=[-V,I];
-		n++;
+    for (k = -200; k < 0; k++) {
+        V = k * vmax / 200;
+        Ih = IS * (Math.exp(qe * (V) / (eta * kb * T)) - 1);
+        I = bin_search();
+        outtext += V.toPrecision(6) + "\t" + I.toPrecision(6) + "\n";
+        d2[n] = [V, I];
+        I = Math.log(Math.abs(I)) / Math.log(10);  // Logarithm
+        d1[n] = [-V, I];
+        n++;
+    }
+
+    for (k = 1; k < 201; k++) {
+        V = k * vmax / 200;
+        Ih = Math.min(IS * (Math.exp(qe * (V) / (eta * kb * T)) - 1), V / RS);
+        I = bin_search();
+        outtext += V.toPrecision(6) + "\t" + I.toPrecision(6) + "\n";
+        d2[n] = [V, I];
+        I = Math.log(Math.abs(I)) / Math.log(10);  // Logarithm
+        d1[n] = [V, I];
+        n++;
+    }
+
+    // Graph Plotting with Hover Tooltips
+    var data1 = [{
+        data: d1,
+        color: "rgb(65, 105, 225)",
+        shadowSize: 1,
+        lines: { show: true, lineWidth: 1 },
+        points: { show: true, radius: 2, fill: true, fillColor: "rgb(65, 105, 225)" }
+    }];
+
+    var data2 = [{
+        data: d2,
+        color: "rgb(31, 69, 252)",
+        shadowSize: 1,
+        lines: { show: true, lineWidth: 1 },
+        points: { show: true, radius: 2, fill: true, fillColor: "rgb(31, 69, 252)" }
+    }];
+
+    // Enable tooltips on hover
+    var plot = $.plot($("#placeholder"), data1, {
+        grid: { borderWidth: 1, hoverable: true, backgroundColor: "#f8f9fa", markingsStyle: "dashed" },
+        tooltip: { show: true, content: "V: %x, I: %y", shifts: { x: 10, y: 20 } }
+    });
+
+    var plot2 = $.plot($("#placeholder2"), data2, {
+        grid: { borderWidth: 1, hoverable: true, backgroundColor: "#f8f9fa", markingsStyle: "dashed" },
+        tooltip: { show: true, content: "V: %x, I: %y", shifts: { x: 10, y: 20 } }
+    });
+
+    // Tooltip event listener
+    $("<div id='tooltip'></div>").css({
+        position: "absolute",
+        display: "none",
+        border: "1px solid #ddd",
+        padding: "5px",
+        "background-color": "#fff",
+        "border-radius": "5px",
+        opacity: 0.8
+    }).appendTo("body");
+
+    $("#placeholder, #placeholder2").bind("plothover", function (event, pos, item) {
+        if (item) {
+            $("#tooltip").html("V: " + item.datapoint[0].toFixed(2) + "<br>I: " + item.datapoint[1].toExponential(2))
+                .css({ top: item.pageY + 10, left: item.pageX + 10 })
+                .fadeIn(200);
+        } else {
+            $("#tooltip").hide();
         }
-			              
+    });
 
-        for (k=1; k<201; k++) {
-		
-		V = k*vmax/200;
-                Ih = Math.min(IS*(Math.exp(qe*(V)/(eta*kb*T)) - 1),V/RS);
-                I = bin_search();
-                outtext=outtext+V.toPrecision(6)+"\t"+I.toPrecision(6)+"\n";
-		d2[n]=[V,I];
-		I = Math.log(Math.abs(I));  //  logarithm
-	        I = I/Math.log(10);
-		d1[n]=[V,I];
-		n++;
-	}
+    // Display Results
+    dataout.text.value = outtext;
+    out = "<hr />";
+    out += "<p>$I_S=$&nbsp;" + IS.toPrecision(3) + " [A]; ";
+    out += "$n_i=$&nbsp;" + (ni / 1E6).toPrecision(3) + " [cm<sup>-3</sup>]; ";
+    out += "$E_g=$&nbsp;" + Eg.toPrecision(3) + " [eV]; ";
+    out += "$D_n=$&nbsp;" + (1E4 * Dn).toPrecision(3) + " [cm²/s]; ";
+    out += "$D_p=$&nbsp;" + (1E4 * Dp).toPrecision(3) + " [cm²/s]; ";
+    out += "$L_n=$&nbsp;" + (1E6 * Ln).toPrecision(3) + " [μm]; ";
+    out += "$L_p=$&nbsp;" + (1E6 * Lp).toPrecision(3) + " [μm]; ";
+    document.getElementById('results').innerHTML = out;
+    MathJax.Hub.Queue(['Typeset', MathJax.Hub]);
+};
 
-
-	var data1 = [{ data: d1, color: "rgb(0, 0, 0)", shadowSize:0, lines: {show:true} }];
-	$.plot($("#placeholder"), data1);
-
-	var data2 = [{ data: d2, color: "rgb(0, 0, 0)", shadowSize:0, lines: {show:true} }];
-	$.plot($("#placeholder2"), data2);
-
-        dataout.text.value = outtext;
-
-out = "<hr \/>";
-out = out +"<p>$I_S=$&nbsp;"+IS.toPrecision(3)+" [A]; ";
-out = out +"$n_i=$&nbsp;"+(ni/1E6).toPrecision(3)+" [cm<sup>-3</sup>]; ";
-out = out +"$E_g=$&nbsp;"+Eg.toPrecision(3)+" [eV]; ";
-out = out +"$D_n=$&nbsp;"+(1E4*Dn).toPrecision(3)+" [cm&sup2;/s]; ";
-out = out +"$D_p=$&nbsp;"+(1E4*Dp).toPrecision(3)+" [cm&sup2;/s]; ";
-out = out +"$L_n=$&nbsp;"+(1E6*Ln).toPrecision(3)+" [&mu;m]; ";
-out = out +"$L_p=$&nbsp;"+(1E6*Lp).toPrecision(3)+" [&mu;m]; ";
-document.getElementById('results').innerHTML=out;   
-MathJax.Hub.Queue(['Typeset',MathJax.Hub]);
-	};
 
 
 
@@ -274,41 +348,91 @@ td.gray {background-color:cccccc}
 
 
 <form name="data">
-<table style="border-collapse:collapse" align="center">
-<tbody><tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$A=$</p></td><td class="gray"><input size="10" value="1E-3" name="A" type="text"> cm<sup>2</sup></td></tr>
+  <style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 10px auto;
+        background: #f8f9fa;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+    }
 
-<!--new Bottons ?! -->
-<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$N_c(300 K)=$ </p></td><td class="gray"><input size="10" value="2.78E19" name="Nc" type="text"> cm<sup>-3</sup></td></tr>
-<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$N_v(300 K)=$ </p></td><td class="gray"><input size="10" value="9.84E18" name="Nv" type="text"> cm<sup>-3</sup></td></tr>
-<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$E_g=$</p></td><td class="gray"><input size="25" value="1.166-4.73E-4*T*T/(T+636)" name="Eg" type="text"> eV</td></tr>
-<tr><td colspan="3" style="background-color:cccccc"><p>&nbsp;</p></td></tr>
+    td {
+        padding: 5px;
+        font-size: 12px;
+    }
 
-<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$\mu_p=$</p></td><td class="gray"><input size="10" value="480" name="Mp" type="text"> cm<sup>2</sup>/Vs</td></tr>
-<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$\tau_p=$</p></td><td class="gray"><input size="10" value="1E-5" name="taup" type="text"> s</td></tr>
-<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$N_a=$</p></td><td class="gray"><input size="10" value="1E17" name="Na" type="text"> cm<sup>-3</sup></td></tr>
+    .gray {
+        background-color: #e9ecef;
+        font-weight: bold;
+        text-align: right;
+        width: 20%;
+        border-right: 2px solid #dee2e6;
+    }
 
-<tr><td colspan="3" style="background-color:cccccc"><p>&nbsp;</p></td></tr>
+    input {
+        width: 90%;
+        padding: 8px;
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        font-size: 14px;
+        text-align: center;
+    }
 
-<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$\mu_n=$</p></td><td class="gray"><input size="10" value="1350" name="Mn" type="text"> cm<sup>2</sup>/Vs</td></tr>
-<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$\tau_n=$</p></td><td class="gray"><input size="10" value="1E-5" name="taun" type="text">  s</td></tr>
-<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$N_d=$</p></td><td class="gray"><input size="10" value="5E17" name="Nd" type="text"> cm<sup>-3</sup></td></tr>
+    input:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+    }
 
+    .separator {
+        background-color: #adb5bd !important;
+        height: 10px;
+    }
+</style>
 
-<tr><td colspan="3" style="background-color:cccccc"><p>&nbsp;</p></td></tr>
+<table>
+    <tbody>
+        <tr>
+            <td class="gray">$A=$</td>
+            <td><input value="1E-3" name="A" type="text"> cm<sup>2</sup></td>
+        </tr>
 
-<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$T=$</p></td><td class="gray"><input size="10" value="300" name="Temp" type="text"> K</td></tr>
-<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$V_{max}=$</p></td><td class="gray"><input size="10" value="1" name="vmax" type="text"> V</td></tr>
-<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$\eta=$</p></td><td class="gray"><input size="10" value="1" name="eta" type="text"> </td></tr>
-<tr><td class="gray"><p style="text-align:right; margin-right:0cm;">$R_S=$</p></td><td class="gray"><input size="10" value="1" name="RS" type="text"> &Omega;</td></tr>
+        <tr><td class="gray">$N_c(300 K)=$</td><td><input value="2.78E19" name="Nc" type="text"> cm<sup>-3</sup></td></tr>
+        <tr><td class="gray">$N_v(300 K)=$</td><td><input value="9.84E18" name="Nv" type="text"> cm<sup>-3</sup></td></tr>
+        <tr><td class="gray">$E_g=$</td><td><input value="1.166-4.73E-4*T*T/(T+636)" name="Eg" type="text"> eV</td></tr>
 
-<tr><td colspan="3" style="background-color:cccccc"><p>&nbsp;</p></td></tr>
+        <tr><td colspan="2" class="separator"></td></tr>
 
+        <tr><td class="gray">$\mu_p=$</td><td><input value="480" name="Mp" type="text"> cm<sup>2</sup>/Vs</td></tr>
+        <tr><td class="gray">$\tau_p=$</td><td><input value="1E-5" name="taup" type="text"> s</td></tr>
+        <tr><td class="gray">$N_a=$</td><td><input value="1E17" name="Na" type="text"> cm<sup>-3</sup></td></tr>
 
-<tr><td colspan="3" style="background-color:cccccc"><p style="text-align:center"><input onclick="plotn()" value="Replot" type="button"></p></td></tr>
-<tr><td colspan="3" style="background-color:cccccc"><p style="text-align:center"><input type="button" value=" Si " onclick="data.Nc.value='2.78E19'; data.Nv.value='9.84E18';data.Eg.value='1.166-4.73E-4*T*T/(T+636)'; data.Mn.value='1350'; data.Mp.value='480';plotn();">
-					<input type="button" value=" Ge " onclick="data.Nc.value='1.04E19'; data.Nv.value='6.0E18';data.Eg.value='0.7437-4.77E-4*T*T/(T+235)'; data.Mn.value='3900'; data.Mp.value='1900';plotn();">
-					<input type="button" value="GaAs" onclick="data.Nc.value='4.45E17'; data.Nv.value='7.72E18';data.Eg.value='1.519-5.41E-4*T*T/(T+204)'; data.Mn.value='8500'; data.Mp.value='400'; plotn();"></p></td></tr>
-</tbody></table>
+        <tr><td colspan="2" class="separator"></td></tr>
+
+        <tr><td class="gray">$\mu_n=$</td><td><input value="1350" name="Mn" type="text"> cm<sup>2</sup>/Vs</td></tr>
+        <tr><td class="gray">$\tau_n=$</td><td><input value="1E-5" name="taun" type="text"> s</td></tr>
+        <tr><td class="gray">$N_d=$</td><td><input value="5E17" name="Nd" type="text"> cm<sup>-3</sup></td></tr>
+
+        <tr><td colspan="2" class="separator"></td></tr>
+
+        <tr><td class="gray">$T=$</td><td><input value="300" name="Temp" type="text"> K</td></tr>
+        <tr><td class="gray">$V_{max}=$</td><td><input value="1" name="vmax" type="text"> V</td></tr>
+        <tr><td class="gray">$\eta=$</td><td><input value="1" name="eta" type="text"></td></tr>
+        <tr><td class="gray">$R_S=$</td><td><input value="1" name="RS" type="text"> &Omega;</td></tr>
+
+        <tr><td colspan="2" class="separator"></td></tr>
+    </tbody>
+</table>
+
+<!-- Add more input fields similarly -->
+<button type="button" class="btn btn-primary" onclick="plotn()">Replot</button>
+<button type="button" class="btn btn-secondary" onclick="data.Nc.value='2.78E19'; data.Nv.value='9.84E18';data.Eg.value='1.166-4.73E-4*T*T/(T+636)'; data.Mn.value='1350'; data.Mp.value='480';plotn();">Si</button>
+<button type="button" class="btn btn-secondary" onclick="data.Nc.value='1.04E19'; data.Nv.value='6.0E18';data.Eg.value='0.7437-4.77E-4*T*T/(T+235)'; data.Mn.value='3900'; data.Mp.value='1900';plotn();">Ge</button>
+<button type="button" class="btn btn-secondary" onclick="data.Nc.value='4.45E17'; data.Nv.value='7.72E18';data.Eg.value='1.519-5.41E-4*T*T/(T+204)'; data.Mn.value='8500'; data.Mp.value='400'; plotn();">GaAs</button>
 
 </form>
 
